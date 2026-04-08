@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsyncAir - Check-In</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 600px; margin: 2rem auto; padding: 0 1rem; }
+        .panel { padding: 1.5rem; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 1rem; }
+        input { padding: 0.5rem; margin-right: 0.5rem; border: 1px solid #999; border-radius: 4px; }
+        button { padding: 0.5rem 1rem; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:disabled { background: #999; cursor: not-allowed; }
+        #consola { background: #1e1e1e; color: #00ff00; padding: 1rem; border-radius: 4px; min-height: 100px; font-family: monospace; margin-bottom: 1rem; }
+        .error { color: #ff5555; }
+        .tarjeta { background: #f0f8ff; padding: 1rem; border-left: 5px solid #0066cc; border-radius: 4px; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>AsyncAir Check-In</h1>
+    
+    <div class="panel">
+        <input type="number" id="pasajeroId" placeholder="Ingrese ID numérico" min="1">
+        <button id="btnCheckIn">Iniciar Check-In</button>
+    </div>
+
+    <h3>Consola de Estado</h3>
+    <div id="consola"></div>
+
+    <div id="resultado"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
